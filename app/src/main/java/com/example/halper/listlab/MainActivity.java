@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
             tv.append(the_list.get(j) + '\n');
 
+
     } // end onOption1
 
     public void onOption2(MenuItem i)
@@ -110,8 +111,11 @@ public class MainActivity extends AppCompatActivity {
     public void onOption3(MenuItem i)
     {
         // YYY: show the list size
+        StringList the_list;
+        the_list = StringList.getInstance();
 
-        tv.setText("Displaying the size of the list.");
+        tv.setText("Displaying the size of the list." + "\n");
+        tv.setText("Size of list is " + the_list.size());
 
     } // end onOption3
 
