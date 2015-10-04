@@ -104,7 +104,15 @@ public class MainActivity extends AppCompatActivity {
     {
         // YYY: show the list in reverse order
 
-        tv.setText("Displaying the list in reverse order.");
+        StringList the_list;
+        the_list = StringList.getInstance();
+        int x = the_list.size()-1;
+
+
+        tv.setText("Displaying the list in reverse order. \n");
+        while(x != 0){
+            tv.setText("Value "+"x"+" is: "+the_list.get(x)+ '\n');
+        }
 
     } // end onOption2
 
@@ -134,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
         // YYY: Start the activity to remove an item from the list
 
         tv.setText("Removing an item from the list.");
+
 
     } // end onOption5
 
