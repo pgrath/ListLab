@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class RemoveItemActivity extends AppCompatActivity {
 
@@ -33,5 +36,28 @@ public class RemoveItemActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void removeItem (View view){
+        EditText et1;
+        int pos;
+        StringList the_list;
+
+        the_list = StringList.getInstance();
+
+        et1 = (EditText) findViewById(R.id.removeItemNumber);
+        pos = Integer.parseInt(et1.getText().toString());
+
+        try{
+            the_list.remove(pos);
+
+        }
+        catch (IndexOutOfBoundsException e){
+            Toast.makeText(RemoveItemActivity.this,
+                    "Remove item failed. Check position sleected",
+                    Toast.LENGTH_SHORT).show();
+
+        }
+
     }
 }

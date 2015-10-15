@@ -142,16 +142,21 @@ public class MainActivity extends AppCompatActivity {
         // YYY: Start the activity to remove an item from the list
 
         tv.setText("Removing an item from the list.");
+        startActivity(new Intent(this, RemoveItemActivity.class));
 
 
     } // end onOption5
 
     public void onOption6(MenuItem i)
     {
-
+        StringList the_list;
+        the_list = StringList.getInstance();
         // YYY: Remove all items from the list
 
         tv.setText("Removing all items from the list.");
+        for(int x = 0; x < the_list.size();){
+            the_list.remove(x);
+        }
 
     } // end onOption6
 

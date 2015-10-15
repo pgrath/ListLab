@@ -9,6 +9,13 @@
         <dex dex="C:\Users\Pat\AndroidStudioProjects\ListLab\app\build\intermediates\pre-dexed\debug\classes-7733b3760a7f56abdc29f3765a04ada8d73be517.jar" />
     </item>
     <item
+        jar="C:\Users\Pat\AndroidStudioProjects\ListLab\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\Pat\AndroidStudioProjects\ListLab\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-0896d855efccb6283eb1dd05cd20ea52ee8484ef.jar" />
+    </item>
+    <item
         jar="C:\Users\Pat\AndroidStudioProjects\ListLab\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
@@ -21,13 +28,6 @@
         revision="23.0.0"
         sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
         <dex dex="C:\Users\Pat\AndroidStudioProjects\ListLab\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-6e5aba52e50f4f8f0f74e7d192f2d5499f876c56.jar" />
-    </item>
-    <item
-        jar="C:\Users\Pat\AndroidStudioProjects\ListLab\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="C:\Users\Pat\AndroidStudioProjects\ListLab\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-0896d855efccb6283eb1dd05cd20ea52ee8484ef.jar" />
     </item>
 
 </items>
