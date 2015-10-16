@@ -111,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
 
         tv.setText("Displaying the list in reverse order. \n");
         while(x != 0){
-            tv.setText("Value "+"x"+" is: "+the_list.get(x)+ '\n');
+            tv.append("Value "+x+" is: "+the_list.get(x)+ '\n');
+            x--;
         }
 
     } // end onOption2
