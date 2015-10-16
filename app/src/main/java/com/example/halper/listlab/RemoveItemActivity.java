@@ -50,11 +50,14 @@ public class RemoveItemActivity extends AppCompatActivity {
 
         try{
             the_list.remove(pos);
+            Toast.makeText(RemoveItemActivity.this,
+                    "Item successfully removed",
+                    Toast.LENGTH_SHORT).show();
 
         }
         catch (IndexOutOfBoundsException e){
             Toast.makeText(RemoveItemActivity.this,
-                    "Remove item failed. Check position sleected",
+                    "Remove item failed. Check position selected",
                     Toast.LENGTH_SHORT).show();
 
         }
